@@ -60,8 +60,12 @@ nav {
 }
 
 nav img {
-	height: 100px;
+	height: 90px;
 	width: auto;
+}
+
+.navbar-logo {
+	padding: 10px;
 }
 
 nav ul {
@@ -127,7 +131,7 @@ nav ul {
 
 .hero .box:first-of-type {
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 70px;
 }
 
 .hero .box:first-of-type p {

@@ -60,8 +60,12 @@ nav {
 }
 
 nav img {
-	height: 100px;
+	height: 90px;
 	width: auto;
+}
+
+.navbar-logo {
+	padding: 10px;
 }
 
 nav ul {
@@ -103,6 +107,7 @@ nav ul {
 .login-form_title {
 	padding-top: 30px;
 	text-align: center;
+	width: 107%;
 }
 
 .login-form_title img {

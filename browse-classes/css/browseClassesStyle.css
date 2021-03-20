@@ -27,9 +27,14 @@ nav ul {
 }
 
 nav img {
-  height: 100px;
-  width: auto;
+	height: 90px;
+	width: auto;
 }
+
+.navbar-logo {
+	padding: 10px;
+}
+
 
 .navbar-button {
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
