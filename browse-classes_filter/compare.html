@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+<script language="JavaScript">
+  function add1(){
+   var tf = document.getElementById('tf');
+   add2(tf.value);
+  }
+ </script>
+</head>
+<body>
+<p id="test">Type stuffz here:</p>
+<textarea id="tf" wrap="logical" rows="10" cols="50"></textarea>
+<!--<input type="textfiel" id="tf"  value="Test">-->
+<br>
+<input type="button" onClick="add1()" value="Add Comment" >
+
+<script type = "text/javascript">
+function add2(input){
+
+    var test = document.getElementById('test');
+    test.innerHTML = input;
+}
+</script>
+</body>
+</html>
+
+
+<html>
+<head>
+<script language="JavaScript">
+  function add1(){
+   var tf = document.getElementById('tf');
+   add2(tf.value);
+  }
+ </script>
+</head>
+<body>
+<p>Type stuffz here:</p>
+<textarea id="tf" wrap="logical" rows="10" cols="50"></textarea>
+<!--<input type="textfiel" id="tf"  value="Test">-->
+<br>
+<input type="button" onClick="add1()" value="Add Comment" >
+
+<script type = "text/javascript">
+function add2(input){
+    document.writeln(input);
+}
+</script>
+</body>
+</html>

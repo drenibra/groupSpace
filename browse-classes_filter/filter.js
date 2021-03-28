@@ -1,33 +1,34 @@
-let projects = document.getElementById('projects'),
-    tutorials = document.getElementById('tutorials'),
-    blogs = document.getElementById('blogs');
+let projects = document.getElementById('projectsBtn'),
+    tutorials = document.getElementById('tutorialsBtn'),
+    blogs = document.getElementById('blogsBtn'),
+    all = document.getElementById('allBtn');
 
     
-    class Classes {
-        constructor(_array) {
-            this.array = _array;
-        }
-        print() {
-            for (let card of this.array) {
-                document.write(`<div class="card">`);
-                document.write(`<figure class="card-image">`);
-                document.write(`<img ${card.image}/>`);
-                document.write(`<figcaption class="card-caption">${card.title}</figcaption>`);
-                document.write(`</figure>`);
-                document.write(`<div class="user-feedback">`);
-                document.write(`<span class="like icon">`);
-                document.write(`<i class="fas fa-heart"></i>${card.likes}`);
-                document.write(`</span>`);
-                document.write(`<span class="comment icon">`);
-                document.write(`<i class="fas fa-comment"></i>${card.comments}`);
-                document.write(`</span>`);
-                document.write(`</div>`);
-                document.write(`</div>`);
-            }
+class Classes {
+    constructor(_array) {
+        this.array = _array;
+    }
+    print() {
+        for (let card of this.array) {
+            document.write(`<div class="card ${card.type}">`);
+            document.write(`<figure class="card-image">`);
+            document.write(`<img ${card.image}/>`);
+            document.write(`<figcaption class="card-caption">${card.title}</figcaption>`);
+            document.write(`</figure>`);
+            document.write(`<div class="user-feedback">`);
+            document.write(`<span class="like icon">`);
+            document.write(`<i class="fas fa-heart"></i>${card.likes}`);
+            document.write(`</span>`);
+            document.write(`<span class="comment icon">`);
+            document.write(`<i class="fas fa-comment"></i>${card.comments}`);
+            document.write(`</span>`);
+            document.write(`</div>`);
+            document.write(`</div>`);
         }
     }
+}
     
-const classesArray = [
+var classesArray = [
     {
         title: 'How I create avatars using Adobe Illustrator',
         image: 'src="../images/card1.png"',
@@ -132,7 +133,29 @@ for (let card of classesArray) {
 console.log(projectsArray);
 console.log(tutorialsArray);
 console.log(blogsArray);
+function findElement (element, display) {
+    var elem = document.getElementsByClassName(element);
+    for (var i=0;i<elem.length;i+=1){
+        elem[i].style.display = display;
+    }
+}
 projects.addEventListener('click', function() {
-    var printProjects = new Classes(projectsArray);
-    printProjects.print();
+    findElement('blogs', 'none');
+    findElement('projects', 'flex');
+    findElement('tutorials', 'none');
+});
+tutorials.addEventListener('click', function() {
+    findElement('blogs', 'none');
+    findElement('projects', 'none');
+    findElement('tutorials', 'flex');
+});
+blogs.addEventListener('click', function() {
+    findElement('blogs', 'flex');
+    findElement('projects', 'none');
+    findElement('tutorials', 'none');
+});
+all.addEventListener('click', function() {
+    findElement('blogs', 'flex');
+    findElement('projects', 'flex');
+    findElement('tutorials', 'flex');
 });
