@@ -374,13 +374,13 @@ a {
   transform: rotate(-45deg) translate(0, -1px);
 }
 #menu {
+	background-color: rgba(15, 76, 117, 0.9);
   position: absolute;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   margin: -100px 0 0 -150px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -394,7 +394,8 @@ a {
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 32px;
+  color: white;
 }
 #menuToggle input:checked ~ ul
 {

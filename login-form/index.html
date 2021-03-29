@@ -18,39 +18,52 @@
   <header>
     <nav>
       <a href="../landing page/index.html" class="navbar-logo"><img src="../images/logo_white.svg" alt="logo"></a>
-      <ul>
+      <ul class="navbar-list">
         <li><a href="#" class="navbar-button">Log In</a></li>
         <li><a href="#" class="navbar-button">Offer a Class</a></li>
         <li><a href="../browse-classes/browseClasses.html" class="navbar-button">Browse Classes</a></li>
         <li><a href="../about-us/index.html" class="navbar-button">About Us</a></li>
       </ul>
+      <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="../landing page/index.html"><li>Home</li></a>
+          <a href="../login-form/index.html"><li>Log In</li></a>
+          <a href="#"><li>Offer a Class</li></a>
+          <a href="../browse-classes/browseClasses.html"><li>Browse Classes</li></a>
+          <a href="../about-us/index.html"><li>About Us</li></a>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
     <div class="container">
-      <section class="form mx-5">
+      <section class="form margjina-5">
             <div class="row">
                 
-                <div class="col-lg-7 log-in px-5 pt-4">
+                <div class="col-lg-7 log-in pt-4">
                     <div class="form-row">
                         
-                        <h1 style="margin-left: 18%;" class="mb-4 sign">Sign into your account</h1>
-                        <div style="margin-left: 18%;" class="col-lg-7">
+                        <h1 class="mb-4 sign">Sign into your account</h1>
+                        <div class="col-lg-7">
                             <input type="email" placeholder="Email" class="form-control my-2 p-3">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div style="margin-left: 18%;" class="col-lg-7">
+                        <div class="col-lg-7">
                             <input type="password" placeholder="Password" class="form-control my-2 p-3">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div style="margin-left: 18%;" class="col-lg-7">
+                        <div class="col-lg-7">
                             <button type="button" class="btn1 mt-3 mb-5" onclick="location.href = '../profile-saved/index.html';">Log In</button>
                         </div>
                     </div>
-                    <a style="margin-left: 18%;" href="#">Forgot Password?</a>
-                    <p style="margin-left: 18%;">Don't have an account?<a href="../signup-form/index.html">Register Here</a></p>
+                    <a href="#">Forgot Password?</a>
+                    <p>Don't have an account?<a href="../signup-form/index.html">Register Here</a></p>
                 </div>
                 <div class="col-lg-5">
                   <img src="img.svg" class="img-fluid" alt=""> 
