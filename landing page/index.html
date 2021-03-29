@@ -13,12 +13,41 @@
   <header>
     <nav>
       <a href="#" class="navbar-logo"><img src="../images/logo_white.svg" alt="logo"></a>
-      <ul>
+      <ul class="navbar-list">
         <li><a href="../login-form/index.html" class="navbar-button">Log In</a></li>
         <li><a href="#" class="navbar-button">Offer a Class</a></li>
         <li><a href="../browse-classes/browseClasses.html" class="navbar-button">Browse Classes</a></li>
         <li><a href="../about-us/index.html" class="navbar-button">About Us</a></li>
       </ul>
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -34,9 +63,11 @@
         </div>
       </section>
       <section class="hero-features">
-        <p class="title">What is groupSpace?</p>
-        <p class="tagline">groupSpace is a platform that allows individuals to:</p>
-        <div>
+        <div class="hero-features_intro">
+          <p class="title">What is groupSpace?</p>
+          <p class="tagline">groupSpace is a platform that allows individuals to:</p>
+        </div>
+        <div class="articles-list">
           <article id="hero-features_article">
             <img src="../images/network.png" alt="network">
             <p class="title">Grow their network</p>
@@ -50,7 +81,16 @@
             <p class="title">Learn from other creators</p>
           </article>
         </div>
-        <div>
+        <div id="join-us_mobile">
+          <div>
+            <p class="title">Join us, build your network.</p>
+            <a href="../signup-form/index.html" class="join-button">Join</a>
+          </div>
+          <div class="illustrations">
+            <img src="../images/illustration-group.svg" alt="code">
+          </div>
+        </div>
+        <div class="roles-list">
           <a href="#" id="roleLink"><p class="role">Programmer</p></a>
           <a href="#" id="roleLink"><p class="role">Graphic Designer</p></a>
           <a href="#" id="roleLink"><p class="role">Visual Effects Artist</p></a>
@@ -65,11 +105,8 @@
           <p class="title">Join us, build your network.</p>
           <a href="../signup-form/index.html" class="join-button">Join</a>
         </div>
-        <div>
-          <img src="../images/code.png" alt="code">
-          <img src="../images/3d-animation.png" alt="animation">
-          <img src="../images/visual-effects.png" alt="visual-effects">
-          <img src="../images/video-game.png" alt="video-games">
+        <div class="illustrations">
+          <img src="../images/illustration-group.svg" alt="code">
         </div>
       </div>
     </div>
