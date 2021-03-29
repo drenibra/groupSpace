@@ -60,25 +60,44 @@ nav {
 }
 
 nav img {
-	height: 100px;
+	height: 70px;
 	width: auto;
+}
+
+nav ul {
+	display: flex;
+}
+
+
+.navbar-logo {
+	padding: 10px;
 }
 
 .navbar-button {
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	text-align: center;
-	margin-left: 32px;
-	font-weight: 700;
-    background: #0F4C75;
 	color: white;
-    width: 150px;
-    height: 50px;
-    border: 0px;
-    border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 15px;
+    width: 132px;
+	margin-left: 20px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.navbar-button:hover, .editprofile-button:hover{
+	background-color: #0e5585;
+	cursor: pointer;
+}
+
+.navbar-button:focus, .editprofile-button:focus {
+	outline: none;
+	background: #0e5585;
 }
 
 .container {
@@ -94,6 +113,9 @@ nav img {
 	max-width: 800px;
 	margin: auto;
 	margin-top: -3%;
+}
+.firstpart h3 {
+	text-align: center;
 }
 .firstpart-button {
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -176,6 +198,25 @@ nav img {
 	position: absolute;
 }
 
+.fas,
+.icon {
+	padding-right: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.like {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-heart {
+  color: #f44235;
+}
+
 .editprofile-button {
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
@@ -191,7 +232,6 @@ nav img {
     height: 50px;
     border: 0px;
 	border-radius: 35px;
-	
 }
 
 .secondpart {
@@ -245,37 +285,41 @@ nav img {
 }
 
 .contentphotoimg p {
-    width: 242px;
+	width: 242px;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 22px;
+    line-height: 1.5em;
     padding: 20px 0 0 10px;
 }
 
 .likecomment{
 	display: flex;
-	align-items: center;
+	align-self: flex-end;
 	position: relative;
-    top: 70px;
-    right: 222px;
+	right: 115px;
+    bottom: 10px;
 } 
 
 
 .likecomment div {
 	display: flex;
 	align-items: center;
+	float: right;
 }
-
-.likecomment div:nth-child(2) img {
-	height: 50px;
+.likecomment div:last-of-type {
+	padding-left: 15px;
 }
 
 
 .likecomment p{
-	font-weight:800;
-	font-size: 40px;
-	margin: auto;	
-	display:flex;
-	text-align: left;
+	font-weight:200;
+	font-size: 22px;
+	padding-left: 5px;
+}
+
+.likecomment img {
+	height: 25px;
+	width: auto;
 }
 
 footer {
@@ -298,3 +342,31 @@ footer {
 a {
 	text-decoration: none;
 }
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+} #modalButton {
+	position: absolute;
+	top: 200px;
+	padding: 20px;
+	font-size: 16px;
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 

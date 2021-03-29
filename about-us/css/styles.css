@@ -85,6 +85,15 @@ nav ul {
 	font-weight: 600;
 }
 
+.navbar-button:hover{
+	background-color: #0e5585;
+}
+
+.navbar-button:focus {
+	outline: none;
+	background: #0e5585;
+}
+
 
 .container {
 	margin: auto;

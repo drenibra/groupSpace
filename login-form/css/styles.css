@@ -89,95 +89,75 @@ nav ul {
 	font-weight: 600;
 }
 
+.navbar-button:hover{
+	background-color: #0e5585;
+	color: white;
+}
+
 .navbar-button:focus {
 	outline: none;
-	background: #212121;
+	background: #0e5585;
+	color: white;
 }
 
 .container {
 	margin: auto;
 	max-width: 1340px;
+	height: 100vh;
 	padding-left: 30px;
 	padding-right: 30px;
 	background: rgba(49, 128, 114, 0.11);
 }
 
-/* LOGIN */
-
-.login-form_title {
-	padding-top: 30px;
-	text-align: center;
-	width: 107%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.login-form_title img {
-	height: 120px;
-	width: auto;
+.logo-login{
+	width: 80px;
+	height: 130px;
+	margin-left: 100px;
 }
 
-.login-form_title h1 {
-	padding-top: 20px;
-	padding-bottom: 30px;
+.img-fluid{
+	margin-top: 20%;
+	margin-left: -8%;
+
+}
+
+.sign{
 	font-size: 24px;
-	font-weight: 600;
 }
 
-.login {
-	max-width: 500px;
-	margin: auto;
-	padding-bottom: 200px;
+.log-in{
+	margin-top: 7%;
 }
 
-.login form {
-	width: 100%;
-}
-.form-area {
-	width: 100%;
-	padding: 15px;
-	font-size: 20px;
-	margin-bottom: 20px;
-
-}
-.form-label {
-	margin-bottom: 20px;
+.btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color:#0F4C75 ;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.form-buttons {
-	display: flex;
-	justify-content: center;
+.btn1:hover{
+    border:2px solid #0F4C75;
+    background: white;
+    color:#0F4C75
 }
 
-.login-button {
-	color: white;
-	background: #0F4C75;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    box-sizing: border-box;
-    border-radius: 8px;
-    line-height: 40px;
-    font-size: 15px;
-    width: 132px;
-	font-style: normal;
-	font-weight: 600;
+.btn1:focus{
+    border:2px solid #0F4C75;
+    background: white;
+    color:#0F4C75
 }
 
-.signup-button {
-	color: #0F4C75;
-	border: 2px solid #0F4C75;
-	background: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    box-sizing: border-box;
-    border-radius: 8px;
-    line-height: 40px;
-    font-size: 15px;
-    width: 132px;
-	font-style: normal;
-	font-weight: 600;
-	margin-left: 20px;
-}
 
 /* FOOTER */
 

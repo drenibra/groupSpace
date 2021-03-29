@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -27,36 +27,38 @@ nav ul {
 }
 
 nav img {
-	height: 90px;
-	width: auto;
+  height: 70px;
+  width: auto;
 }
 
 .navbar-logo {
-	padding: 10px;
+  padding: 10px;
 }
 
-
 .navbar-button {
-	/* offset-x | offset-y | blur-radius | spread-radius | color */
-	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   border-radius: 8px;
   line-height: 40px;
   font-size: 15px;
   width: 132px;
-	margin-left: 20px;
-	font-style: normal;
-	font-weight: 600;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 600;
 }
 
+.navbar-button:hover{
+	background-color: #0e5585;
+}
 
 .navbar-button:focus {
-  outline: none;
-  background: #212121;
+	outline: none;
+	background: #0e5585;
 }
 
 .container {
@@ -88,15 +90,15 @@ nav img {
 }
 
 .main-search {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .filter {
-  max-width: 300px;
+  /* width: 200px; */
   display: flex;
   justify-content: space-around;
 }
@@ -104,41 +106,36 @@ nav img {
 .filter button {
   position: relative;
   top: 20px;
-  left: 18px;
   background: #3280b4;
   height: 30px;
   padding: 0 20px;
   margin: 0 20px;
+  width: 100px;
 }
 
 .search {
   position: relative;
-  display: flex;
+  /* display: flex; */
   width: 100%;
-  max-width: 400px;
+  width: 400px;
   margin: 0 auto;
   border-radius: 50px;
   padding: 8px 16px;
   background: #fff;
 }
 
-.search:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 999;
-  height: 2px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
 .search input {
-  color: 313332;
-  font-size: 24px;
+  padding-left: 20px;
+  color: #313332;
+  font-size: 16px;
   line-height: 30px;
   vertical-align: middle;
+}
+
+.search button {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
 .search input:focus,
@@ -150,20 +147,20 @@ nav img {
 .search i {
   background: #fff;
   color: #313332;
-  line-height: 30px;
+  /* line-height: 30px; */
   vertical-align: middle;
 }
 
 .classes {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .classes .row {
-  max-width: 1200px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .card {
@@ -177,6 +174,7 @@ nav img {
   align-items: center;
   box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  margin: 20px;
 }
 
 .card-image > img {
@@ -205,7 +203,7 @@ nav img {
 
 .card-caption {
   font-size: 24px;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 15px;
 }
 
 footer {

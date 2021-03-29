@@ -5,140 +5,122 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/91c3ae4de4.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <title>GroupSpace</title>
 </head>
 <body>
   <header>
     <nav>
-      <a href="#"><img src="images/logo-navbar.png" alt="logo"></a>
-      <div>
-        
-        <button class="navbar-button">Offer a Class</button>
-        <button class="navbar-button">Browse Classes</button>
-        <button class="navbar-button">About Us</button>
-      </div>
+      <a href="#" class="navbar-logo"><img src="../images/logo_white.svg" alt="logo"></a>
+      <ul>
+        <li><a href="#" class="navbar-button">Offer a Class</a></li>
+        <li><a href="../browse-classes/browseClasses.html" class="navbar-button">Browse Classes</a></li>
+        <li><a href="../about-us/index.html" class="navbar-button">About Us</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
+  <div id="modalBox" class="modal">
+    <div class="modal-content">
+      <h1>Edit Profile</h1>
+      <form>
+        <label for="fname">Full Name</label></br>
+        <input type="text" name="fname" value="Jane Doe"></br>
+        <label for="bio">Description</label></br>
+        <input type="text" name="bio" value="Front End Developer"></br>
+      </form>
+      <button class="close">Close</button>
+    </div>
+  </div>
+  <main id="main-content">
     <div class="container">
-      
       <div class="editprofile">
-        <button class="editprofile-button"> Edit Profile  </button>
-        <img src="images/zilja.png" alt="zilja">
+        <button class="editprofile-button" id="editProfileButton">Edit Profile</button>
+        <img src="../images/zilja.png" alt="zilja">
       </div>
-     
-
       <div class="firstpart">
-       
-
-        <img src="images/profilepic1.svg" alt="" >
-          
+        <img src="../images/profilepic1.svg" alt="" > 
         <p> Jane Doe</p>
         <p1>Front End Developer</p1>
         <p2>"Every programmer is an author"</p2>
-        <button class="firstpart-button"> Edit Profile  </button>
+        <h3>35 Subscribers</h3>
       </div>
       <div class="secondpart">
-
         <p> Posts </p>
         <p> Saved</p>
         <p> Projects</p>
         <hr>
-
       </div>
       <div class="content-articles">
       <div class="contentblock">
         <div class="contentphotoimg">
-          <img src="images/Rectangle 36.png" alt="foto1">
+          <img src="../images/Rectangle 36.png" alt="foto1">
           <p> Build Your Website Using HTML&CSS</p>
         </div>
         <div class="likecomment">
-          <div>
-            <img src="images/image 4.png">
-            <p>11</p>
-          </div>
-          <div>
-            <img src="images/image 5.png" alt="">
-            <p>5</p>
-          </div>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
       </div>
       <div class="contentblock">
         <div class="contentphotoimg">
-        <img src="images/Rectangle 38.png" alt="foto2">
+        <img src="../images/Rectangle 38.png" alt="foto2">
         <p> How to improve your skills on Photoshop</p>
        </div>
+              
        <div class="likecomment">
-         <div>
-          <img src="images/image 4.png">
-          <p>24</p>
-         </div>
-         <div>
-          <img src="images/image 5.png" alt="">
-          <p> 7</p>
-         </div>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
-       </div> 
-
+        </div>
       <div class="contentblock">
         <div class="contentphotoimg">
-          <img src="images/Rectangle 40.png" alt="foto3">
+          <img src="../images/Rectangle 40.png" alt="foto3">
           <p> How to become a Graphic Designer</p>
         </div>
         <div class="likecomment">
-          <img src="images/image 4.png">
-          <p>29</p>
-          <img src="images/image 5.png" alt="">
-          <p> 17</p>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
       </div>
-
       <div class="contentblock">
         <div class="contentphotoimg">
-          <img src="images/Rectangle 40.png" alt="foto3">
+          <img src="../images/Rectangle 40.png" alt="foto3">
           <p> How to become a Graphic Designer</p>
         </div>
         <div class="likecomment">
-          <img src="images/image 4.png">
-          <p>29</p>
-          <img src="images/image 5.png" alt="">
-          <p> 17</p>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
       </div>
-
       <div class="contentblock">
         <div class="contentphotoimg">
-          <img src="images/Rectangle 40.png" alt="foto3">
+          <img src="../images/Rectangle 40.png" alt="foto3">
           <p> How to become a Graphic Designer</p>
         </div>
         <div class="likecomment">
-          <img src="images/image 4.png">
-          <p>29</p>
-          <img src="images/image 5.png" alt="">
-          <p> 17</p>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
       </div>
-
       <div class="contentblock">
         <div class="contentphotoimg">
-          <img src="images/Rectangle 40.png" alt="foto3">
+          <img src="../images/Rectangle 40.png" alt="foto3">
           <p> How to become a Graphic Designer</p>
         </div>
         <div class="likecomment">
-          <img src="images/image 4.png">
-          <p>29</p>
-          <img src="images/image 5.png" alt="">
-          <p> 17</p>
+          <span class="like icon"> <i class="fas fa-heart"></i>11</span>
+          <span class="comment icon"><i class="fas fa-comment"></i>5</span>
         </div>
       </div>
     </div>
-
       </div>
     <footer>
       <p class="footer-text">Copyright © 2020, Group Space</p>
     </footer>
+    <script src="editProfileModal.js"></script>
   </main>
 </body>
 </html>

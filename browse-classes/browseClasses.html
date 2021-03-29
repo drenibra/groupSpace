@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"/>
     <title>Browse Classes</title>
+    
   </head>
   <body>
     <header>
@@ -32,176 +33,28 @@
             <p class="quote">Enrich your mind</p>
           </div>
           <div class="main-search">
-            <!-- <div class="filter">
-              <button> <i class="fas fa-filter"></i></button>
-            </div> -->
               <div class="search">
-                <input class="search-input" type="email" placeholder="Search for classes"></input>
-                <button type="submit">  <i class="fas fa-search"></i></button>
+                <input id="userSearch" class="search-input" type="text" placeholder="Programming, Design, CV.."></input>
+                <button id="searchBtn">  <i class="fas fa-search"></i></button>
               </div> 
               <div class="filter">
-                <button class="navbar-button" id="projects">Projects</button>
-                <button class="navbar-button" id="tutorials">Tutorials</button>
-                <button class="navbar-button" id="blogs">Blogs</button>
-             
+                <button class="navbar-button" id="projectsBtn">Projects</button>
+                <button class="navbar-button" id="tutorialsBtn">Tutorials</button>
+                <button class="navbar-button" id="blogsBtn">Blogs</button>
+                <button class="navbar-button" id="allBtn">All</button>
               </div>
-            
             </div>
-            
-          </div>
-          
-      
+          </div>     
         <div class="classes">
-          <div class="row">
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card1.png" alt="" />
-                <figcaption class="card-caption">
-                  How I create avatars using Adobe Illustrator
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card2.png" alt="" />
-                <figcaption class="card-caption">
-                  How I create avatars using Adobe Illustrator
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>         
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card3.png" alt="" />
-                <figcaption class="card-caption">
-                  I made this fire in Adobe After Effects
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card4.png" alt="" />
-                <figcaption class="card-caption">
-                  Work-to-do list in HTML&CSS               
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card5.png" alt="" />
-                <figcaption class="card-caption">
-                  My portait done in Adobe Illustrator          
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card6.png" alt="" />
-                <figcaption class="card-caption">
-                  10 Steps to Improve Your Photoshop Skills
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card7.png" alt="" />
-                <figcaption class="card-caption">
-                  Build your website using HTML&CSS
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card8.png" alt="" />
-                <figcaption class="card-caption">
-                  Lion shattering in pieces Done in Adobe Illustrator
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card9.png" alt="" />
-                <figcaption class="card-caption">
-                  Importance of Colors in Graphic Design
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card10.png" alt="" />
-                <figcaption class="card-caption">
-                  Steps to building the perfect CV
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card11.png" alt="" />
-                <figcaption class="card-caption">
-                  How to become a Graphic Designer
-                </figcaption>
-              </figure>
-              <div class="user-feedback">
-                <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-              </div>  
-            </div>
-            <div class="card">
-              <figure class="card-image">
-                <img src="../images/card12.png" alt="" />
-                <figcaption class="card-caption">
-                  This cool low-poly cat I created in Adobe Illustrator
-                </figcaption>
-                </figure>
-                <div class="user-feedback">
-                  <span class="like icon"> <i class="fas fa-heart"></i>11</span>
-                  <span class="comment icon"><i class="fas fa-comment"></i>4</span>
-                </div>  
+          <div class="row" id="main-content">
+            <script src="filter.js"></script>
+            <script src="searchFilter.js"></script>
           </div>
         </div>
-      </div>
     </main>
     <footer>
       <p class="footer-text">Copyright © 2020, Group Space</p>
     </footer>
+
   </body>
 </html>
