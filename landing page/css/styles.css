@@ -291,3 +291,8 @@ footer {
 a {
 	text-decoration: none;
 }
+
+#roleButton {
+	width: 100px;
+	height: 50px;
+}
