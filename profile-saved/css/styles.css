@@ -112,7 +112,6 @@ nav ul {
 .firstpart {
 	max-width: 800px;
 	margin: auto;
-	margin-top: -3%;
 }
 .firstpart h3 {
 	text-align: center;
@@ -184,7 +183,6 @@ nav ul {
 	
 	margin-left: 70%;
 	margin-top: 20px;
-	padding-bottom: -15%;
 
 
 }
@@ -344,7 +342,7 @@ a {
 }
 
 .modal {
-	display: none;
+	display: block;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -360,6 +358,19 @@ a {
 	padding: 20px;
 	font-size: 16px;
 }
+
+form {
+  margin-bottom: 50px;
+  width: 80%;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40px;
+} form input {
+  width: 70%;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0 25px;
+}
 .modal-content {
 	background-color: #fefefe;
 	margin: 15% auto; 
@@ -370,3 +381,192 @@ a {
 	flex-direction: column;
 	align-items: center;
 } 
+
+#menuToggle {
+	display: none;
+	position: relative;
+	top: 3px;
+	left: -27px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+  }
+  
+  #menuToggle a {
+	text-decoration: none;
+	color: #232323;
+	
+	transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover {
+	color: tomato;
+  }
+  
+  
+  #menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	
+	cursor: pointer;
+	
+	opacity: 0;
+	z-index: 2;
+	
+	-webkit-touch-callout: none;
+  }
+  #menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	
+	background: #cdcdcd;
+	border-radius: 3px;
+	
+	z-index: 1;
+	
+	transform-origin: 4px 0px;
+	
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+	transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+  }
+  #menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+	  background-color: rgba(15, 76, 117, 0.9);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	margin: -100px 0 0 -150px;
+	padding: 50px;
+	padding-top: 125px;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+  }
+  
+  #menu li
+  {
+	padding: 10px 0;
+	font-size: 32px;
+	color: white;
+  }
+  #menuToggle input:checked ~ ul
+  {
+	transform: none;
+  }
+
+@media (max-width: 1388px) {
+	.contentblock {
+		width: 600px;
+	}
+}
+  @media (max-width: 768px) {
+    form {
+      width: 100%;
+      text-align: center;
+      padding-top: 30px;
+    } input {
+      margin: 10px 0 25px;
+      font-size: 20px;
+      width: 100%;
+    }
+	.modal-content {
+    width: 80%;
+    font-size: 1.5em;
+  }
+	.secondpart p {
+		font-size: 20px;
+	} .secondpart hr {
+		width: 27%;
+	}
+	.contentblock {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	} .likecomment {
+		align-self: unset;
+		position: unset;
+	}
+	.contentphotoimg {
+		align-items: center;
+	flex-direction: column;
+	} .contentphotoimg img {
+		height: unset;
+		width: 100%;
+	} .contentphotoimg p {
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	} 
+	.editprofile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: unset;
+		margin-top: 0;
+		padding-top: 20px;
+	} .editprofile img {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		height: 50px;
+		width: 50px;
+		position: unset;
+	} .likecomment{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}.container {
+		display: flex;
+		flex-direction: column;
+	} .container .editprofile {
+		order: 2;
+	} .container .firstpart {
+		order: 1;
+		padding-top: 30px;
+	} .container .secondpart {
+		order: 3;
+		margin: auto;
+	} .container .content-articles {
+		order: 4;
+	}
+	.navbar-list {
+		display: none;
+	} nav {
+		display: flex;
+		flex-direction: row-reverse;
+	} #menuToggle {
+		display: block;
+	}
+	header {
+		background: #0F4C75;
+	} 
+}

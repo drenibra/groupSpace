@@ -145,3 +145,20 @@ select {
 	outline: none;
 	background: #212121;
 }
+
+@media (max-width: 913px) {
+	.white-bars {
+		display: none;
+	} .registration-form {
+		width: 100%;
+		position: unset;
+		height: unset;
+	} .button {
+		float: unset;
+		position: unset;
+		width: 100%;
+		margin: auto;
+	} select {
+		width: 100%;
+	}
+}
