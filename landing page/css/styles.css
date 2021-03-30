@@ -430,7 +430,10 @@ a {
 	.hero .box:first-of-type a {
 		margin: auto;
 		width: 100%;
-	} .hero .box:last-of-type img {
+	} .hero .box:first-of-type img {
+		width: 80%;
+		padding-bottom: 25px;
+	}.hero .box:last-of-type img {
 		width: 100%;
 	}
 	.hero-features .tagline {
