@@ -328,6 +328,10 @@ footer {
 	background: #0F4C75;
 }
 
+ form label {
+	 font-style: 24px;
+ }
+
 .footer-text {
 	font-style: normal;
 	font-weight: normal;
@@ -372,6 +376,8 @@ form {
   margin: 10px 0 25px;
 }
 .modal-content {
+	position: relative;
+    top: -100px;
 	background-color: #fefefe;
 	margin: 15% auto; 
 	padding: 20px;

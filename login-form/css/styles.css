@@ -172,6 +172,10 @@ footer {
 	align-items: center;
 	height: 70px;
 	background: #0F4C75;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
 
 .footer-text {
@@ -208,6 +212,12 @@ a {
   
   #menuToggle a:hover {
 	color: tomato;
+  }
+
+  .test {
+	height: 80vh;
+    display: flex;
+    align-items: center;
   }
   
   
@@ -301,9 +311,12 @@ a {
   }
 
   @media (max-width: 768px) {
-	.container {
-		height: auto;
-	  } 
+
+
+	  .test {
+		  flex-direction: column;
+		  height: auto;
+	  }
 	.img-fluid {
 		margin-left: 0;
 	} 
@@ -337,5 +350,12 @@ a {
 	.col-lg-7 {
 		width: 100%;
 		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.test {
+		flex-direction: column;
+		height: auto;
 	}
 }
