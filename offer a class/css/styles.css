@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+	border-bottom-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0F4C75;
+}
+
+nav img {
+	height: 70px;
+	width: auto;
+}
+
+.navbar-logo {
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+}
+
+.navbar-button {
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 15px;
+    width: 132px;
+	margin-left: 20px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.navbar-button:hover{
+	background-color: #0e5585;
+}
+
+.navbar-button:focus {
+	outline: none;
+	background: #0e5585;
+}
+*{
+    box-sizing: border-box;
+}
+
+li a {
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #effaef;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.heading{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .heading h1 {
+    padding-top: 30px;
+}
+
+.logo{
+    width: 130px;
+    
+}
+
+.heading h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #412777;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    box-shadow: 5px 10px 38px rgba(129, 80, 80, 0.2);
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.image{
+    width: 55%;
+    height: min-content;
+    margin: auto;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap2{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #b2b2b2;
+    margin-bottom: 13px;
+}
+
+.wrap{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.f1{
+    border-bottom: 2px solid #b2b2b2;
+    width: 40%;
+    position: relative;
+}
+
+.f2{
+    border-bottom: 2px solid #b2b2b2;
+    margin-left: auto;
+    width: 40%;
+    position: relative;
+}
+
+label{
+    font-size: 12px;
+    color:#676768;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    min-height: 25%;
+    border-bottom: none;
+    padding: 15px 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: #0f0f0f;
+    font-weight: 500;
+    padding:10px 0px;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+} .post {
+    background: #0f4d77;
+    color: white;
+}
+.btn .cancel {
+    background-color: white;
+    color: #0F4C75;
+}
+.btn:hover {
+    background: #5088ad;
+}
+.btn:focus {
+    background: #10598a;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	background: #0F4C75;
+}
+
+.footer-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	color: white;
+}

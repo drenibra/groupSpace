@@ -248,6 +248,35 @@ nav ul {
 	margin-right: 20px;
 } 
 
+.card {
+	background: #f2f2f2;
+	margin-bottom: 30px;
+	max-width: 350px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	margin: 20px;
+  }
+  
+  .card-image > img {
+	max-width: 350px;
+  }
+
+  /* .card-caption {
+	font-size: 24px;
+	margin: 10px 0 0 15px;
+  } */
+
+  .user-feedback {
+	margin: 20px 20px 20px 0;
+	display: flex;
+	align-self: flex-end;
+  }
+
 .secondpart hr {
 	
 	width:110px;
@@ -596,4 +625,32 @@ form {
 	header {
 		background: #0F4C75;
 	} 
+}
+
+/* NEW */
+
+.contentblock2 {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 45%;
+	background: #F2F2F2;
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+	margin-top: 40px;
+} .contentphotoimg2{
+	display: flex;
+	text-align: center;
+} .contentphotoimg2 p {
+	font-weight: 600;
+	margin: auto;
+	font-size: 24px;
+	padding: 15px 0 15px;
+} .likecomment2 {
+	padding: 10px;
+} .likecomment2 p:nth-child(2) {
+	padding: 20px 0 20px;
+	font-weight: bold;
+} .likecomment2 p:last-of-type {
+	color: #0e5585;
 }

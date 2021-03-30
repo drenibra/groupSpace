@@ -35,3 +35,8 @@ saveBtn.addEventListener('click', function () {
   jobTitle.innerHTML = bioInput;
   quote.innerHTML = quoteInput;
 });
+
+let mainContent = document.getElementById('main-content-posts')
+mainContent.innerHTML = localStorage.getItem('html')
+
+
