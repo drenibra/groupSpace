@@ -1,13 +1,18 @@
-let modal = document.getElementById("modalBox");
-let btn = document.getElementById("editProfileButton");
-let span = document.getElementsByClassName("close")[0];
-let main = document.getElementById('main-content');
+let modal = document.getElementById("modalBox"),
+    btn = document.getElementById("editProfileButton"),
+    closeBtn = document.getElementsByClassName("close")[0],
+    closeBtnSave = document.getElementsByClassName("save")[0],
+    main = document.getElementById('main-content');
 
 btn.onclick = function() {
   modal.style.display = "block";
   main.style.filter = "blur(4px)";
 }
-span.onclick = function() {
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+  main.style.filter = "none";
+} 
+closeBtnSave.onclick = function() {
   modal.style.display = "none";
   main.style.filter = "none";
 }

@@ -342,7 +342,7 @@ a {
 }
 
 .modal {
-	display: block;
+	display: none;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -484,6 +484,17 @@ form {
   {
 	transform: none;
   }
+  .close {
+	  width: 60%;
+	outline: none;
+	height: 50px;
+	font-size: 1em;
+	border: none;
+} .save {
+	margin-top: 15px;
+	background-color: #0e5585;
+	color: white;
+}
 
 @media (max-width: 1388px) {
 	.contentblock {
@@ -491,6 +502,16 @@ form {
 	}
 }
   @media (max-width: 768px) {
+	.close {
+		outline: none;
+		width: 80%;
+		height: 50px;
+		font-size: 0.7em;
+	} .save {
+		margin-top: 15px;
+		background-color: #0e5585;
+		color: white;
+	}
     form {
       width: 100%;
       text-align: center;
