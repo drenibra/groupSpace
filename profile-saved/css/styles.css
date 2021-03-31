@@ -234,6 +234,8 @@ nav ul {
 
 .secondpart {
 	display: inline-block;
+} .saved {
+	border-bottom: solid 2px #232323;
 }
 
 .secondpart p {
@@ -372,6 +374,7 @@ footer {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 .modal {

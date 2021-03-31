@@ -129,7 +129,7 @@ input{
 
 .logo{
     width: 130px;
-    
+    padding-top: 30px;
 }
 
 .heading h1{
@@ -141,7 +141,7 @@ input{
 
 .container{
     width: 80%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     display: flex;
     box-shadow: 5px 10px 38px rgba(129, 80, 80, 0.2);
@@ -173,6 +173,13 @@ input{
     position: relative;
     border-bottom: 2px solid #b2b2b2;
     margin-bottom: 13px;
+} #post {
+    background-color: #0e5585;
+    color: white;
+} #cancel {
+    border: 1px solid black;
+} .form {
+    padding-bottom: 25px;
 }
 
 .wrap{
@@ -261,4 +268,12 @@ footer {
 	line-height: 18px;
 	text-align: center;
 	color: white;
+}
+
+@media (max-width: 768px) {
+    .image {
+        display: none;
+    } .form {
+        width: 100%;
+    }
 }
